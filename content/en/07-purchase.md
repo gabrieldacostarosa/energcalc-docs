@@ -50,4 +50,4 @@ sequenceDiagram
 
 ## Reviews
 
-You can leave a review only after a confirmed purchase. Reviews are published after moderation, with the first name only and a **"Verified purchase"** badge. EnergCalc doesn't publish reviews that don't come from real purchases.
+Only people with a confirmed purchase can leave a review. Reviews are published after moderation, with the first name only and a **"Verified purchase"** badge. EnergCalc doesn't publish reviews that don't come from real purchases.

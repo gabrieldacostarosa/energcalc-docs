@@ -51,7 +51,7 @@ flowchart LR
 
 ## Design decisions
 
-**One engine, two places.** The same calculation code runs in the browser (instant feedback while you tap buttons) and on the server (the official result that goes into the report). The preview and the report therefore never disagree.
+**One engine, two places.** The same calculation code runs in the browser (instant feedback while the person taps buttons) and on the server (the official result that goes into the report). The preview and the report therefore never disagree.
 
 **One source for every rule.** The offer pricing, the result texts and the report model each live in a single place, used by both the screen and the server.
 
@@ -59,7 +59,7 @@ flowchart LR
 
 **Screen and PDF from the same model.** The report is assembled once as structured data and then rendered two ways: HTML in the portal and PDF on the server.
 
-**No sign-up to calculate.** You calculate with an anonymous session; your email-and-password account is created only when you buy.
+**No sign-up to calculate.** People calculate with an anonymous session; the email-and-password account is created only at purchase.
 
 ## Server functions
 

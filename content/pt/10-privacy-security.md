@@ -21,7 +21,7 @@ O EnergCalc **não** coleta localização precisa, **não** vende dados e **resp
 
 ## Direitos (LGPD)
 
-Você pode pedir acesso, correção ou exclusão dos seus dados a qualquer momento pelo contato do site.
+A pessoa pode pedir acesso, correção ou exclusão dos seus dados a qualquer momento pelo contato do site.
 
 ## Como os dados são protegidos
 
@@ -31,8 +31,8 @@ Você pode pedir acesso, correção ou exclusão dos seus dados a qualquer momen
 | **Decisões no servidor** | Preço, cálculo oficial e liberação do relatório nunca dependem do navegador. |
 | **Pagamento confirmado na fonte** | A liberação depende de uma confirmação consultada diretamente no Mercado Pago, com verificação de assinatura e conferência de valor. |
 | **Registros imutáveis** | Cálculos e versões de relatório não podem ser alterados depois de gravados. |
-| **PDFs privados** | Entregues por links temporários, só para você, que comprou. |
-| **E-mail confirmado** | O portal só abre depois que você confirma ser dono do e-mail. |
+| **PDFs privados** | Entregues por links temporários, só para o comprador. |
+| **E-mail confirmado** | O portal só abre depois que a pessoa confirma ser dona do e-mail. |
 | **Administração protegida** | A permissão de administrador fica no banco e não pode ser concedida pelo próprio usuário. |
 | **Trilha de auditoria** | Alterações administrativas (preços, liberações, estornos) ficam registradas com autor e data. |
 | **Segredos fora do site** | Chaves de serviço ficam apenas no servidor, nunca no código do navegador. |

@@ -7,15 +7,15 @@ description: What EnergCalc is, who it is for, and how these docs are organized.
 
 # EnergCalc
 
-**With EnergCalc, you find out how much backup power you need to get through a blackout — and understand every number, in plain language.**
+**EnergCalc shows how much backup power is needed to get through a blackout — and explains every number in plain language.**
 
-You tell EnergCalc what must stay on (fridge, internet, lights) and for how long. EnergCalc calculates energy, power, battery, inverter and solar panels; compares a **ready-made power station** with a **custom-built system**; and delivers a **technical report** with a shopping list, compatibility checks and a budget.
+People tell EnergCalc what must stay on (fridge, internet, lights) and for how long. EnergCalc calculates energy, power, battery, inverter and solar panels; compares a **ready-made power station** with a **custom-built system**; and delivers a **technical report** with a shopping list, compatibility checks and a budget.
 
 ## Who it is for
 
 | Audience | What they get |
 |---|---|
-| **You, at home or at your business** | A clear answer to "how much battery do I need?" without having to understand electrical engineering. |
+| **Homes and small businesses** | A clear answer to "how much battery do I need?" without having to understand electrical engineering. |
 | **Technical readers** | Formulas, assumptions and limits stated openly, so every result can be checked. |
 | **The product owner** | A dashboard with traffic, the sales funnel, sign-ups and purchases. |
 

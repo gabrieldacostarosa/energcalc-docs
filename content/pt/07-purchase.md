@@ -9,7 +9,7 @@ description: Como funcionam a oferta por tempo limitado, o pagamento e o portal.
 
 ## A oferta por tempo limitado
 
-Quando você vê o **primeiro resultado**, começa a contar uma oferta de lançamento com descontos que diminuem em etapas de 30 minutos. Depois disso, vale o **preço normal** — e ele é de fato cobrado.
+Quando a pessoa vê o **primeiro resultado**, começa a contar uma oferta de lançamento com descontos que diminuem em etapas de 30 minutos. Depois disso, vale o **preço normal** — e ele é de fato cobrado.
 
 Três regras deixam a oferta justa e verdadeira:
 

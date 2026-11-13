@@ -7,15 +7,15 @@ description: O que é o EnergCalc, para quem é e como esta documentação está
 
 # EnergCalc
 
-**Com o EnergCalc, você descobre quanta energia de emergência precisa para atravessar um apagão — e entende cada número, em linguagem simples.**
+**O EnergCalc mostra quanta energia de emergência é necessária para atravessar um apagão — e explica cada número em linguagem simples.**
 
-Você diz o que precisa ficar ligado (geladeira, internet, luz) e por quanto tempo. O EnergCalc calcula a energia, a potência, a bateria, o inversor e os painéis solares; compara uma **estação de energia pronta** com um **sistema montado**; e entrega um **relatório técnico** com lista de compras, verificações de compatibilidade e orçamento.
+A pessoa diz o que precisa ficar ligado (geladeira, internet, luz) e por quanto tempo. O EnergCalc calcula a energia, a potência, a bateria, o inversor e os painéis solares; compara uma **estação de energia pronta** com um **sistema montado**; e entrega um **relatório técnico** com lista de compras, verificações de compatibilidade e orçamento.
 
 ## Para quem é
 
 | Público | O que encontra |
 |---|---|
-| **Você, em casa ou no seu negócio** | Uma resposta clara para "quanto de bateria eu preciso?" sem precisar entender elétrica. |
+| **Residências e pequenos negócios** | Uma resposta clara para "quanto de bateria eu preciso?" sem precisar entender elétrica. |
 | **Pessoas técnicas** | Fórmulas, premissas e limites declarados, para conferir cada resultado. |
 | **O proprietário do produto** | Um painel com acessos, funil de vendas, cadastros e compras. |
 

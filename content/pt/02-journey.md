@@ -25,11 +25,11 @@ flowchart LR
 
 Há duas formas de calcular, e as duas usam o mesmo motor.
 
-**Calculadora rápida (na página inicial).** Você toca nos aparelhos que precisam ficar ligados — geladeira, roteador, lâmpadas e celular já vêm marcados — ajusta a quantidade com **+** e **−** e escolhe a duração do apagão num controle deslizante (de 1 hora a 5 dias). O resultado aparece na hora: energia, bateria a comprar, potência, pico de partida, inversor mínimo, painéis solares e a estação que atende.
+**Calculadora rápida (na página inicial).** A pessoa toca nos aparelhos que precisam ficar ligados — geladeira, roteador, lâmpadas e celular já vêm marcados — ajusta a quantidade com **+** e **−** e escolhe a duração do apagão num controle deslizante (de 1 hora a 5 dias). O resultado aparece na hora: energia, bateria a comprar, potência, pico de partida, inversor mínimo, painéis solares e a estação que atende.
 
-**Calculadora completa (8 etapas).** Se você quer detalhar cada aparelho:
+**Calculadora completa (8 etapas).** Para quem quer detalhar cada aparelho:
 
-| Etapa | O que você informa | Por que importa |
+| Etapa | O que a pessoa informa | Por que importa |
 |---|---|---|
 | 1. Local | Região, tensão da tomada (127/220 V) e frequência | Equipamento na tensão errada é o erro mais comum; a região define o sol disponível. |
 | 2. Objetivo | Apagão, cabana, camping, motorhome… | Muda prioridades: portabilidade, autonomia, expansão. |
@@ -54,17 +54,17 @@ O resultado mostra, sem cadastro:
 
 ## 3. Comprar o relatório completo
 
-Abaixo do resultado fica a oferta do relatório completo. Você:
+Abaixo do resultado fica a oferta do relatório completo. A pessoa:
 
 1. Informa **nome, e-mail, WhatsApp (opcional)** e **cria uma senha** para o portal.
 2. Aceita o termo de comunicação (LGPD).
-3. Vai para o **Mercado Pago** (Pix ou cartão).
+3. É levada ao **Mercado Pago** (Pix ou cartão).
 
 Os detalhes da oferta por tempo limitado estão em [Compra, oferta e acesso](#pt-purchase).
 
 ## 4. Acessar o portal
 
-Depois do pagamento, você **confirma o e-mail** (um link enviado automaticamente) e entra em **Meu portal** com e-mail e senha. Lá você:
+Depois do pagamento, a pessoa **confirma o e-mail** (um link enviado automaticamente) e entra em **Meu portal** com e-mail e senha. Lá ela:
 
 - vê o status de cada compra ("Liberado" ou "Aguardando confirmação");
 - abre o **relatório na tela**;

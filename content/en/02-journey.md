@@ -25,11 +25,11 @@ flowchart LR
 
 There are two ways to calculate, and both use the same engine.
 
-**Quick calculator (on the home page).** You tap the appliances that must stay on — fridge, router, lights and phone are preselected — adjust quantities with **+** and **−**, and pick the blackout length on a slider (from 1 hour to 5 days). Results appear instantly: energy, battery to buy, power, starting surge, minimum inverter, solar panels and the power station that fits.
+**Quick calculator (on the home page).** The person taps the appliances that must stay on — fridge, router, lights and phone are preselected — adjusts quantities with **+** and **−**, and picks the blackout length on a slider (from 1 hour to 5 days). Results appear instantly: energy, battery to buy, power, starting surge, minimum inverter, solar panels and the power station that fits.
 
-**Full calculator (8 steps).** If you want to detail every appliance:
+**Full calculator (8 steps).** For people who want to detail every appliance:
 
-| Step | What you enter | Why it matters |
+| Step | What the person enters | Why it matters |
 |---|---|---|
 | 1. Location | Region, outlet voltage (127/220 V) and frequency | Buying equipment for the wrong voltage is the most common mistake; the region sets the available sunlight. |
 | 2. Goal | Blackout, cabin, camping, RV… | Changes priorities: portability, autonomy, expansion. |
@@ -54,17 +54,17 @@ Without signing up, the result shows:
 
 ## 3. Buy the full report
 
-Below the result is the full-report offer. You:
+Below the result is the full-report offer. The person:
 
-1. Enter **name, email, WhatsApp (optional)** and **create a password** for the portal.
-2. Accept the communication terms (data-protection consent).
-3. Go to **Mercado Pago** (Pix instant transfer or card).
+1. Enters **name, email, WhatsApp (optional)** and **creates a password** for the portal.
+2. Accepts the communication terms (data-protection consent).
+3. Is taken to **Mercado Pago** (Pix instant transfer or card).
 
 Details of the limited-time offer are in [Purchase, offer and access](#en-purchase).
 
 ## 4. Use the portal
 
-After paying, you **confirm your email** (a link is sent automatically) and sign in to **My portal** with email and password. There you can:
+After paying, the person **confirms their email** (a link is sent automatically) and signs in to **My portal** with email and password. There they can:
 
 - see each purchase's status ("Unlocked" or "Waiting for confirmation");
 - open the **report on screen**;

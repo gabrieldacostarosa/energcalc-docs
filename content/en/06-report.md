@@ -49,4 +49,4 @@ The report is **not an engineered design** and carries **no professional certifi
 ## Delivery
 
 - **On screen:** clickable table of contents, tables, formulas and diagram.
-- **As a PDF:** generated on the server and delivered through a temporary link, only to you.
+- **As a PDF:** generated on the server and delivered through a temporary link, only to the buyer.
