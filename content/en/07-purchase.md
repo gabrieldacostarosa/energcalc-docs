@@ -1,23 +1,15 @@
 ---
 slug: purchase
-title: Purchase, offer and access
+title: Purchase and access
 group: Product
-description: How the limited-time offer, payment and portal work.
+description: The welcome offer, payment and the buyer portal.
 ---
 
-# Purchase, offer and access
+# Purchase and access
 
-## The limited-time offer
+## Welcome offer
 
-When a person sees their **first result**, a launch offer starts, with discounts that step down every 30 minutes. After that, the **regular price** applies — and it is actually charged.
-
-Three rules keep the offer fair and truthful:
-
-1. **The server sets the price.** The price on screen is information only; the charge uses the server's calculation.
-2. **The clock is per person, not per device.** Switching browser, device or network doesn't restart it. If the email entered at sign-up already had an offer running, the correct price is shown **before** payment.
-3. **Last chance, once only.** Someone who comes back after the offer has ended gets the biggest discount back for 15 minutes — **one time only**.
-
-The offer text on screen states these conditions.
+For people getting to know EnergCalc, we set aside a **special welcome offer** on the full report. The discount appears with the result, with the final price already worked out. The price charged is always the one on screen at the time of purchase.
 
 ## Payment
 

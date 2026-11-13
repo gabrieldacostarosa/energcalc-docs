@@ -18,7 +18,7 @@ O EnergCalc trata cada fórmula como uma promessa: ela precisa ter um caso de te
 | **Inversor** | Potência contínua, aparente e de pico; cargas que não ligam juntas; forma de onda; tensão e frequência. |
 | **Solar e controlador** | Potência dos painéis, pior mês, tempo de recarga, tensão no frio, tensão no calor, corrente, compatibilidade do controlador. |
 | **Estações** | Energia utilizável estimada, pico não documentado, baterias extras, escolha da recomendação. |
-| **Oferta** | Cada faixa de preço, o preço cheio e a última chance usada uma única vez. |
+| **Oferta** | Cada preço da oferta e o preço normal. |
 | **Relatório** | As 24 seções, lista de materiais igual à configuração, tradução de todas as mensagens. |
 | **Marco de engenharia** | Geladeira + internet + luz em 8 h, 24 h e com painéis solares; resultado determinístico. |
 

@@ -1,23 +1,15 @@
 ---
 slug: purchase
-title: Compra, oferta e acesso
+title: Compra e acesso
 group: Produto
-description: Como funcionam a oferta por tempo limitado, o pagamento e o portal.
+description: A oferta de boas-vindas, o pagamento e o portal do comprador.
 ---
 
-# Compra, oferta e acesso
+# Compra e acesso
 
-## A oferta por tempo limitado
+## Oferta de boas-vindas
 
-Quando a pessoa vê o **primeiro resultado**, começa a contar uma oferta de lançamento com descontos que diminuem em etapas de 30 minutos. Depois disso, vale o **preço normal** — e ele é de fato cobrado.
-
-Três regras deixam a oferta justa e verdadeira:
-
-1. **O preço é decidido pelo servidor.** O valor exibido na tela é só informação; a cobrança usa o cálculo do servidor.
-2. **O tempo é por pessoa, não por aparelho.** Trocar de navegador, aparelho ou rede não reinicia a contagem. Se o e-mail informado no cadastro já tinha uma oferta em andamento, o preço correto aparece **antes** do pagamento.
-3. **Última chance, uma vez só.** Quem volta depois que a oferta acabou recebe o maior desconto de volta por 15 minutos — **uma única vez**.
-
-Todos os textos da oferta informam essas condições na própria tela.
+Para quem está conhecendo o EnergCalc, separamos uma **oferta especial de boas-vindas** no relatório completo. O desconto aparece junto do resultado, com o valor final já calculado. O preço cobrado é sempre o que está na tela no momento da compra.
 
 ## O pagamento
 

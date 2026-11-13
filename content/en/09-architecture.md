@@ -10,7 +10,7 @@ description: The system's parts, how they talk to each other and why.
 EnergCalc is a web application with three layers: the **site** (in the browser), the **server** (database and functions) and the **payment provider**.
 
 ```mermaid
-flowchart LR
+flowchart TD
   subgraph Browser
     UI[React site]
     EN1[Calculation engine<br/>instant preview]
@@ -66,7 +66,7 @@ flowchart LR
 | Function | What it does |
 |---|---|
 | Official calculation | Runs the engine with the database catalog and stores the immutable result. |
-| Offer clock | Returns the person's offer time and activates the last chance when it applies. |
+| Offer | Returns the welcome offer that applies to the person. |
 | Checkout start | Records the sign-up, works out the price and returns the payment link. |
 | Payment notification | Receives Mercado Pago's notice, confirms the payment and unlocks the report. |
 | Report | Delivers the report for the screen and a temporary link to the PDF. |

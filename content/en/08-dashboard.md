@@ -43,7 +43,7 @@ The dashboard shows how the site is being used and how it sells. Access is restr
 ## The funnel
 
 ```mermaid
-flowchart LR
+flowchart TD
   A[Visited] --> B[Completed calc] --> C[Saw offer] --> D[Clicked buy] --> E[Signed up] --> F[Purchased]
 ```
 

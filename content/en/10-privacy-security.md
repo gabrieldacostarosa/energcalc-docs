@@ -15,7 +15,7 @@ description: What data exists, what it's for and how it's protected.
 | **Energy project** (appliances, hours, region) | When calculating | Producing the result and the report. |
 | **Sign-up** (name, email, optional WhatsApp) | At purchase | Delivering the report and providing support. |
 | **Payment** | At Mercado Pago | Processed by Mercado Pago. EnergCalc never sees card data. |
-| **Offer control** (device, network and email identifiers) | When calculating and buying | Applying the per-person offer. Stored **irreversibly (hashed)** and deleted within 90 days. |
+| **Offer control** (device, network and email identifiers) | When calculating and buying | Applying the welcome offer once per person. Stored **irreversibly (hashed)** and deleted within 90 days. |
 
 EnergCalc does **not** collect precise location, does **not** sell data and **honors** the browser's "Do Not Track" signal for metrics.
 

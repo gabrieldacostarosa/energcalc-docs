@@ -10,7 +10,7 @@ description: The complete path, from the first visit to the downloaded report.
 This page describes EnergCalc from the user's point of view. There are three roles: **visitor**, **buyer** and **owner**.
 
 ```mermaid
-flowchart LR
+flowchart TD
   A[Visitor opens the site] --> B[Quick or<br/>full calculator]
   B --> C[Free result<br/>+ recommended station]
   C --> D{Wants the<br/>full report?}
@@ -60,7 +60,7 @@ Below the result is the full-report offer. The person:
 2. Accepts the communication terms (data-protection consent).
 3. Is taken to **Mercado Pago** (Pix instant transfer or card).
 
-Details of the limited-time offer are in [Purchase, offer and access](#en-purchase).
+The welcome offer is described in [Purchase and access](#en-purchase).
 
 ## 4. Use the portal
 

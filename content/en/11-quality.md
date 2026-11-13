@@ -18,7 +18,7 @@ EnergCalc treats every formula as a promise: it needs a test case with an expect
 | **Inverter** | Continuous, apparent and surge power; loads that don't run together; waveform; voltage and frequency. |
 | **Solar and controller** | Panel power, worst month, recharge time, cold-weather voltage, hot-weather voltage, current, controller compatibility. |
 | **Power stations** | Estimated usable energy, undocumented surge, extra batteries, recommendation choice. |
-| **Offer** | Every price tier, the regular price and the one-time last chance. |
+| **Offer** | Every offer price and the regular price. |
 | **Report** | All 24 sections, bill of materials matching the configuration, every message translated. |
 | **Engineering milestone** | Fridge + internet + lights for 8 h, 24 h and with solar; deterministic results. |
 

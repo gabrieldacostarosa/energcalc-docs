@@ -10,7 +10,7 @@ description: O caminho completo, da primeira visita ao relatório baixado.
 Esta página descreve o EnergCalc do ponto de vista de quem usa. Existem três perfis: **visitante**, **comprador** e **proprietário**.
 
 ```mermaid
-flowchart LR
+flowchart TD
   A[Visitante abre o site] --> B[Calculadora rápida<br/>ou completa]
   B --> C[Resultado grátis<br/>+ estação recomendada]
   C --> D{Quer o relatório<br/>completo?}
@@ -60,7 +60,7 @@ Abaixo do resultado fica a oferta do relatório completo. A pessoa:
 2. Aceita o termo de comunicação (LGPD).
 3. É levada ao **Mercado Pago** (Pix ou cartão).
 
-Os detalhes da oferta por tempo limitado estão em [Compra, oferta e acesso](#pt-purchase).
+A oferta de boas-vindas está em [Compra e acesso](#pt-purchase).
 
 ## 4. Acessar o portal
 

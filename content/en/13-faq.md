@@ -30,6 +30,3 @@ No. The recommendation is technical; referral links are labeled as such and don'
 
 **Is my data safe?**
 See [Privacy and security](#en-privacy-security).
-
-**Why doesn't the discount restart on another device?**
-The offer is per person. That keeps the discount fair for everyone and the regular price honest.

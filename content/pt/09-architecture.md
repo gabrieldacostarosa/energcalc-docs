@@ -10,7 +10,7 @@ description: As peças do sistema, como conversam e por que foram organizadas as
 O EnergCalc é uma aplicação web com três camadas: o **site** (no navegador), o **servidor** (banco de dados e funções) e o **provedor de pagamento**.
 
 ```mermaid
-flowchart LR
+flowchart TD
   subgraph Navegador
     UI[Site React]
     EN1[Motor de cálculo<br/>prévia instantânea]
@@ -66,7 +66,7 @@ flowchart LR
 | Função | O que faz |
 |---|---|
 | Cálculo oficial | Executa o motor com o catálogo do banco e grava o resultado imutável. |
-| Relógio da oferta | Informa o tempo de oferta da pessoa e ativa a última chance quando cabe. |
+| Oferta | Informa a oferta de boas-vindas válida para a pessoa. |
 | Início da compra | Registra o cadastro, calcula o preço e devolve o link de pagamento. |
 | Aviso de pagamento | Recebe o aviso do Mercado Pago, confirma o pagamento e libera o relatório. |
 | Relatório | Entrega o relatório para a tela e um link temporário para o PDF. |

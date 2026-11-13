@@ -43,7 +43,7 @@ O painel mostra como o site está sendo usado e vendido. O acesso é restrito: a
 ## O funil
 
 ```mermaid
-flowchart LR
+flowchart TD
   A[Visitaram] --> B[Concluíram cálculo] --> C[Viram a oferta] --> D[Clicaram em comprar] --> E[Se cadastraram] --> F[Compraram]
 ```
 

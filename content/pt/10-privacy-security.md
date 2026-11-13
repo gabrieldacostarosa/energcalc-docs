@@ -15,7 +15,7 @@ description: Que dados existem, para que servem e como são protegidos.
 | **Projeto de energia** (aparelhos, horas, região) | Ao calcular | Gerar o resultado e o relatório. |
 | **Cadastro** (nome, e-mail, WhatsApp opcional) | Na compra | Entregar o relatório e dar suporte. |
 | **Pagamento** | No Mercado Pago | Processado pelo Mercado Pago. O EnergCalc não vê dados de cartão. |
-| **Controle da oferta** (identificador do aparelho, rede e e-mail) | Ao calcular e comprar | Aplicar a oferta por pessoa. Guardado de forma **irreversível (hash)** e apagado em até 90 dias. |
+| **Controle da oferta** (identificador do aparelho, rede e e-mail) | Ao calcular e comprar | Aplicar a oferta de boas-vindas uma vez por pessoa. Guardado de forma **irreversível (hash)** e apagado em até 90 dias. |
 
 O EnergCalc **não** coleta localização precisa, **não** vende dados e **respeita** o sinal "Do Not Track" do navegador para as métricas.
 

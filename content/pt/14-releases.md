@@ -11,7 +11,7 @@ description: O que mudou em cada versão e o que vem a seguir.
 
 | Versão | Principais entregas |
 |---|---|
-| **0.3** | Oferta por pessoa (o tempo continua em qualquer aparelho); última chance única; avaliações de compras verificadas. |
+| **0.3** | Oferta de boas-vindas; avaliações de compras verificadas. |
 | **0.2** | Painel do proprietário com métricas, funil e rastreio; compra por link de pagamento; portal com e-mail e senha; correção no dimensionamento de inversores para aparelhos de uso avulso. |
 | **0.1** | Motor de cálculo com testes; calculadora rápida e completa; resultado grátis; relatório na tela e em PDF; catálogo inicial do Brasil. |
 

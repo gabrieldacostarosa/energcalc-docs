@@ -58,6 +58,12 @@ const html = `<!DOCTYPE html>
 <title>EnergCalc — Documentação / Documentation</title>
 <meta name="description" content="Documentação pública do EnergCalc: como funciona o cálculo de bateria, inversor e painéis solares para apagões. Public documentation of EnergCalc.">
 <meta name="theme-color" content="#0D0D0D">
+<link rel="canonical" href="https://energcalc.netlify.app/docs/">
+<meta property="og:type" content="website"><meta property="og:site_name" content="EnergCalc">
+<meta property="og:title" content="EnergCalc — Documentação">
+<meta property="og:description" content="Como o EnergCalc calcula bateria, inversor e painéis solares para apagões, explicado em linguagem simples.">
+<meta property="og:url" content="https://energcalc.netlify.app/docs/"><meta property="og:image" content="https://energcalc.netlify.app/og.png">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="6" fill="#0D0D0D"/><path d="M18 3 7 18h7l-2 11 11-16h-7z" fill="#FFB800"/></svg>')}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -104,6 +110,14 @@ th,td{padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top}t
 .diagram{margin:22px 0;padding:18px;border:1px solid var(--line);border-radius:12px;background:var(--bg2);overflow-x:auto;text-align:center}
 .diagram pre.mermaid{background:none;border:0;margin:0;padding:0;font:13px "IBM Plex Mono",monospace;color:var(--text2);text-align:left}
 .diagram pre.mermaid[data-processed]{text-align:center}
+.diagram{position:relative}.diagram svg{max-width:100%;height:auto}
+.zoom-btn{display:block;margin:12px auto 0;font-size:12px;padding:6px 10px}
+.zoom-ov{position:fixed;inset:0;z-index:100;background:color-mix(in srgb,var(--bg) 94%,transparent);display:flex;flex-direction:column}
+.zoom-bar{display:flex;gap:8px;align-items:center;justify-content:center;padding:12px;border-bottom:1px solid var(--line);background:var(--bg2)}
+.zoom-pct{font:500 13px "IBM Plex Mono",monospace;min-width:52px;text-align:center;color:var(--text2)}
+.zoom-close{margin-left:12px}
+.zoom-stage{flex:1;overflow:auto;padding:24px;display:flex;align-items:flex-start;justify-content:center;touch-action:pan-x pan-y pinch-zoom}
+.zoom-stage svg{flex:none;background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:16px}
 .pager{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:56px}
 .pager a{display:block;border:1px solid var(--line);border-radius:10px;padding:14px 16px;color:var(--head)}.pager a:hover{border-color:var(--accent);text-decoration:none}
 .pager small{display:block;color:var(--text2);font:500 11px "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.12em}.pager .next{text-align:right;grid-column:2}
@@ -203,10 +217,43 @@ nav.side.open{transform:none}.menu-btn{display:inline-block}main{padding:26px 18
     if (!nodes.length) return;
     var run = function(m){
       m.initialize({ startOnLoad:false, securityLevel:'strict', theme: theme==='dark' ? 'dark' : 'neutral', themeVariables: { fontFamily:'IBM Plex Sans, sans-serif', primaryColor: theme==='dark' ? '#1C1C1C' : '#F7F7F8', primaryBorderColor:'#FF5500', lineColor: theme==='dark' ? '#A9AFB8' : '#5E6470', primaryTextColor: theme==='dark' ? '#F4F4F6' : '#0D0D0D' } });
-      m.run({ nodes: nodes }).catch(function(){});
+      m.run({ nodes: nodes }).then(addZoomButtons).catch(function(){});
     };
     if (mermaidMod) return run(mermaidMod);
     import('https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs').then(function(mod){ mermaidMod = mod.default; run(mermaidMod); }).catch(function(){ /* sem internet: mostra o texto do diagrama */ });
+  }
+
+  // diagramas: botão "Ampliar" abre o diagrama em tela cheia, com zoom (botões, Ctrl+roda, pinça) e rolagem
+  function addZoomButtons(){
+    Array.prototype.forEach.call(document.querySelectorAll('.diagram'), function(d){
+      if (d.querySelector('.zoom-btn') || !d.querySelector('svg')) return;
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'btn zoom-btn'; b.textContent = '⤢ ' + (lang === 'pt' ? 'Ampliar' : 'Enlarge');
+      b.onclick = function(){ openZoom(d.querySelector('svg')); };
+      d.appendChild(b);
+    });
+  }
+  function openZoom(svg){
+    var vb = (svg.getAttribute('viewBox') || '').split(/\s+/).map(Number);
+    var natW = vb[2] || svg.getBoundingClientRect().width;
+    var ov = document.createElement('div'); ov.className = 'zoom-ov'; ov.setAttribute('role', 'dialog'); ov.setAttribute('aria-modal', 'true');
+    var bar = document.createElement('div'); bar.className = 'zoom-bar';
+    var stage = document.createElement('div'); stage.className = 'zoom-stage';
+    var clone = svg.cloneNode(true); clone.removeAttribute('style'); clone.style.maxWidth = 'none'; clone.style.height = 'auto';
+    var scale = Math.max(1, Math.min(2.2, (window.innerWidth - 48) / natW));
+    var apply = function(){ clone.style.width = Math.round(natW * scale) + 'px'; pct.textContent = Math.round(scale * 100) + '%'; };
+    var mk = function(txt, label, fn){ var x = document.createElement('button'); x.type = 'button'; x.className = 'btn'; x.textContent = txt; x.setAttribute('aria-label', label); x.onclick = fn; bar.appendChild(x); return x; };
+    mk('−', lang === 'pt' ? 'Diminuir' : 'Zoom out', function(){ scale = Math.max(0.4, scale / 1.25); apply(); });
+    var pct = document.createElement('span'); pct.className = 'zoom-pct'; bar.appendChild(pct);
+    mk('+', lang === 'pt' ? 'Aumentar' : 'Zoom in', function(){ scale = Math.min(6, scale * 1.25); apply(); });
+    var close = function(){ ov.remove(); document.removeEventListener('keydown', key); document.body.style.overflow = ''; };
+    var key = function(e){ if (e.key === 'Escape') close(); };
+    mk('✕ ' + (lang === 'pt' ? 'Fechar' : 'Close'), lang === 'pt' ? 'Fechar' : 'Close', close).classList.add('zoom-close');
+    stage.addEventListener('wheel', function(e){ if (!e.ctrlKey) return; e.preventDefault(); scale = Math.min(6, Math.max(0.4, scale * (e.deltaY < 0 ? 1.1 : 0.9))); apply(); }, { passive: false });
+    ov.addEventListener('click', function(e){ if (e.target === ov || e.target === stage) close(); });
+    stage.appendChild(clone); ov.appendChild(bar); ov.appendChild(stage); document.body.appendChild(ov);
+    document.addEventListener('keydown', key); document.body.style.overflow = 'hidden';
+    apply(); bar.querySelector('.zoom-close').focus();
   }
 
   // busca

@@ -30,6 +30,3 @@ Não. A recomendação é técnica; os links de indicação são identificados c
 
 **Meus dados ficam seguros?**
 Veja [Privacidade e segurança](#pt-privacy-security).
-
-**Por que o desconto não reinicia quando abro em outro aparelho?**
-A oferta é por pessoa. Isso mantém o desconto justo para todos e o preço normal verdadeiro.
