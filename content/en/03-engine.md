@@ -55,11 +55,21 @@ No battery should be drained to zero, and every conversion loses energy. That is
 
 The AC and DC paths are calculated **separately**, so no loss is counted twice.
 
+#### How much the battery needs to store
+
+| Situation | The battery stores | What covers the rest |
+|---|---|---|
+| Blackout of up to 1 day | The whole blackout | — |
+| Blackout longer than 1 day, **without** solar | The whole blackout | — |
+| Blackout longer than 1 day, **with** solar | **1 day of consumption**: the night plus a cloudy day | The panels replace each day's consumption |
+
+With panels, the battery doesn't need to hold 5 days of energy: it is the "water tank" for the night, and the sun fills it again in the morning. That is why a 5-day blackout with sun needs almost the same system as a 1-day blackout. On very rainy days the panels produce less, and the advice is to ease off the less important appliances.
+
 ### 3. Bank voltage and amp-hours
 
 `Ah = Wh ÷ Voltage`
 
-Larger banks move up in voltage (12 → 24 → 48 V) to reduce current — which allows thinner cables and less heat. The rule: the lowest voltage that keeps continuous current at or below 150 A, with 12 V limited to about 2.5 kWh and 24 V to about 6 kWh.
+The bank voltage (12, 24 or 48 V) is chosen by **current**: the lowest voltage that keeps continuous current at or below 150 A. A home that uses a few hundred watts stays at 12 V, even with several kWh of battery — moving up in voltage would only force a bigger, more expensive inverter. Among the possible voltages, the engine keeps the **cheapest** configuration that passes every check.
 
 For each battery model the engine also checks the **manufacturer's limits**: how many in series and in parallel, and the continuous and peak current allowed by the **BMS** (the battery's protection circuit).
 

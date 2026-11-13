@@ -55,11 +55,21 @@ Nenhuma bateria deve ser esvaziada até zero, e toda conversão perde energia. P
 
 Os caminhos AC e DC são calculados **separadamente**, para que nenhuma perda seja contada duas vezes.
 
+#### Quanto a bateria precisa guardar
+
+| Situação | A bateria guarda | Quem cobre o resto |
+|---|---|---|
+| Apagão de até 1 dia | O apagão inteiro | — |
+| Apagão de mais de 1 dia, **sem** painel solar | O apagão inteiro | — |
+| Apagão de mais de 1 dia, **com** painel solar | **1 dia de consumo**: a noite e um dia nublado | Os painéis repõem, a cada dia, o que a casa gasta |
+
+Com painéis, a bateria não precisa guardar 5 dias de energia: ela é a "caixa d'água" da noite, e o sol a enche de novo pela manhã. Por isso um apagão de 5 dias com sol pede quase o mesmo sistema que um apagão de 1 dia. Em dias de muita chuva, os painéis rendem menos, e a orientação é poupar os aparelhos menos importantes.
+
 ### 3. Tensão do banco e amperes-hora
 
 `Ah = Wh ÷ Tensão`
 
-Bancos maiores sobem a tensão (12 → 24 → 48 V) para reduzir a corrente — o que permite cabos mais finos e menos aquecimento. A regra usada: a menor tensão que mantém a corrente contínua até 150 A, com 12 V limitado a cerca de 2,5 kWh e 24 V a cerca de 6 kWh.
+A tensão do banco (12, 24 ou 48 V) é escolhida pela **corrente**: a menor tensão que mantém a corrente contínua até 150 A. Uma casa que usa poucas centenas de watts fica em 12 V, mesmo com vários kWh de bateria — subir a tensão só obrigaria a um inversor maior e mais caro. Entre as tensões possíveis, o motor fica com a configuração **mais barata** que passa em todas as verificações.
 
 O motor também verifica, para cada modelo de bateria, os **limites do fabricante**: quantas em série e em paralelo, e a corrente contínua e de pico suportada pelo **BMS** (o circuito de proteção da bateria).
 
