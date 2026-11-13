@@ -35,7 +35,7 @@ For each appliance:
 `Energy (Wh) = Power (W) × Quantity × Hours of use × Duty cycle`
 
 - The **duty cycle** exists because compressors (fridges, freezers) switch on and off. A 150 W fridge doesn't draw 150 W all day; on average it runs about 40% of the time.
-- If the person enters **measured consumption** (from the energy label or a meter), that value **replaces** the estimate — and the duty cycle is not applied again.
+- If you enter **measured consumption** (from the energy label or a meter), that value **replaces** the estimate — and the duty cycle is not applied again.
 - **Standby** consumption is added for the hours the appliance isn't in use.
 - **Blackouts shorter than 24 h:** the engine conservatively assumes daily use happens during the blackout. **24 h or more:** daily consumption × number of days.
 

@@ -51,7 +51,7 @@ flowchart LR
 
 ## Decisões de projeto
 
-**Um motor, dois lugares.** O mesmo código de cálculo roda no navegador (resposta instantânea enquanto a pessoa mexe nos botões) e no servidor (o resultado oficial que vai para o relatório). Assim, a prévia e o relatório nunca discordam.
+**Um motor, dois lugares.** O mesmo código de cálculo roda no navegador (resposta instantânea enquanto você mexe nos botões) e no servidor (o resultado oficial que vai para o relatório). Assim, a prévia e o relatório nunca discordam.
 
 **Uma fonte para cada regra.** O preço da oferta, os textos dos resultados e o modelo do relatório existem em um único lugar, usado tanto pela tela quanto pelo servidor.
 
@@ -59,7 +59,7 @@ flowchart LR
 
 **Tela e PDF a partir do mesmo modelo.** O relatório é montado uma vez como dados estruturados e depois desenhado de dois jeitos: em HTML no portal e em PDF no servidor.
 
-**Calculadora sem cadastro.** A pessoa calcula com uma sessão anônima; a conta com e-mail e senha só é criada na compra.
+**Calculadora sem cadastro.** Você calcula com uma sessão anônima; sua conta com e-mail e senha só é criada na compra.
 
 ## Funções do servidor
 

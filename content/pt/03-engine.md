@@ -35,7 +35,7 @@ Para cada aparelho:
 `Energia (Wh) = Potência (W) × Quantidade × Horas de uso × Ciclo de trabalho`
 
 - O **ciclo de trabalho** existe porque compressores (geladeira, freezer) ligam e desligam. Uma geladeira de 150 W não consome 150 W o dia inteiro; em média, cerca de 40% do tempo.
-- Se a pessoa informa o **consumo medido** (da etiqueta Inmetro ou de um medidor), esse valor **substitui** a estimativa — e o ciclo não é aplicado de novo.
+- Se você informa o **consumo medido** (da etiqueta Inmetro ou de um medidor), esse valor **substitui** a estimativa — e o ciclo não é aplicado de novo.
 - O consumo em espera (**standby**) é somado nas horas em que o aparelho não está em uso.
 - **Apagão menor que 24 h:** o motor assume, de forma conservadora, que o uso diário acontece dentro do apagão. **24 h ou mais:** consumo diário × número de dias.
 

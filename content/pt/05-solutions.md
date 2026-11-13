@@ -20,7 +20,7 @@ O EnergCalc compara sempre as duas abordagens. Nenhuma é "melhor" em todos os c
 
 ## Como a recomendação é escolhida
 
-- Se a pessoa pediu **estação pronta** ou **portabilidade**, a estação é recomendada quando atende.
+- Se você pediu **estação pronta** ou **portabilidade**, a estação é recomendada quando atende.
 - Se pediu **sistema montado** ou **solar**, recomenda-se a configuração equilibrada.
 - No modo **"não sei"**, a estação é recomendada quando tem custo competitivo; caso contrário, o sistema montado.
 - Se nenhuma estação do catálogo cobre toda a autonomia, aparece a **mais próxima**, com as horas que ela sustenta.

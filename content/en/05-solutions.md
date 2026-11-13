@@ -20,7 +20,7 @@ EnergCalc always compares both approaches. Neither is "better" in every case.
 
 ## How the recommendation is chosen
 
-- If the person asked for a **ready-made station** or **portability**, the station is recommended whenever it fits.
+- If you asked for a **ready-made station** or **portability**, the station is recommended whenever it fits.
 - If they asked for a **custom** or **solar** system, the balanced configuration is recommended.
 - In **"not sure"** mode, the station is recommended when its cost is competitive; otherwise the custom system.
 - If no catalog station covers the whole period, the **closest** one appears, with the hours it can run.
